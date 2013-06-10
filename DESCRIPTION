@@ -1,0 +1,16 @@
+Package: PISA2003lite
+Version: 1.0
+Type: Package
+Title: A ,,light'' version of the package PISA2003.
+Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
+Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
+Description:  A ,,lite'' version of the package PISA2003. 
+           Only raw datasets are aaliable here, the large datasets [e.g. complete, keys] are not included.
+Repository: CRAN
+License: GPL-2
+LazyLoad: yes
+LazyData: yes
+URL: http://pisa2009.acer.edu.au/
+Depends: R (>= 2.8.0)
+LinkingTo:
+Imports:
