@@ -1,16 +1,17 @@
 Package: PISA2003lite
 Version: 1.0
 Type: Package
-Title: A ,,light'' version of the package PISA2003.
+Title: Set of datasets from PISA 2003 study
 Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
 Maintainer: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
-Description:  A ,,lite'' version of the package PISA2003. 
-           Only raw datasets are aaliable here, the large datasets [e.g. complete, keys] are not included.
+Description: This package aggregates datasets from PISA 2003 study. 
+        The original dataset is available here: \code{http://pisa2003.acer.edu.au/downloads.php}. It was converted into the R package to facilitate access for researchers familiar with R.
+        The PISA2003lite package contains raw datasets available on the PISA webpage. In the package PISA2009 you will find additional datasets, merged datasets, transformed variables, but be aware because it is a quite large package.
 Repository: CRAN
 License: GPL-2
 LazyLoad: yes
 LazyData: yes
-URL: http://pisa2009.acer.edu.au/
+URL: http://pisa2003.acer.edu.au/
 Depends: R (>= 2.8.0)
 LinkingTo:
 Imports:
