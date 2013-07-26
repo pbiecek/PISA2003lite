@@ -12,9 +12,7 @@
 
   The codebook for this dataset is avaliable here \code{http://pisa2003.acer.edu.au/downloads/StQ_CodeBook_2003.pdf}.
   
-  The variable names are avaliable in the named vector \code{student2003dict$colnames}.
-  
-  The dictionaries for \code{student2003} data set are avaliable as list of named vectors \code{student2003dict}.
+  The variable names are avaliable in the named vector \code{student2003dict}.
 }
 \usage{data(student2003)}
 \references{
@@ -23,13 +21,13 @@
 \author{
  Dataset created by OECD, transformed by Przemyslaw Biecek
 }
-\seealso{\code{\link{school2003}}, \code{\link{scoredItem2003}}}
+\seealso{\code{\link{school2003}}, \code{\link{item2003}}}
 \examples{
 library(PISA2003lite)
 
 # first few rows
 student2003[1:5,1:10]
-head(student2003dict$colnames)
+head(student2003dict)
 
 # averages in MATH, based on PV1MATH
 means <- unclass(by(

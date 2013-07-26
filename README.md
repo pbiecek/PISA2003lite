@@ -10,4 +10,3 @@ The original dataset is avaliable here [http://pisa2003.acer.edu.au/downloads.ph
 
 You may be also interested in R packages PISA2000, PISA2006, PISA2009, PISA2012 with data from othere PISA releases.
 
-The examples how to use PISA2003lite package are avaliable here ....

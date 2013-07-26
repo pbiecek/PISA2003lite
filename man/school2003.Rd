@@ -1,5 +1,6 @@
 \name{school2003}
 \alias{school2003}
+\alias{item2003}
 \alias{school2003dict}
 \docType{data}
 \title{Data from school questionnaire PISA 2003}
@@ -12,9 +13,7 @@
 
   The codebook for this dataset is avaliable here \code{http://pisa2003.acer.edu.au/downloads/ScQ_CodeBook_2003.pdf}.
   
-  The variable names are avaliable in the named vector \code{school2003dict$colnames}.
-  
-  The dictionaries for \code{school2003} data set are avaliable as list of named vectors \code{school2003dict}.
+  The variable names are avaliable in the named vector \code{school2003dict}.
 }
 \usage{data(school2003)}
 \references{
@@ -23,13 +22,13 @@
 \author{
  Dataset created by OECD, transformed by Przemyslaw Biecek
 }
-\seealso{\code{\link{student2003}}, \code{\link{scoredItem2003}}}
+\seealso{\code{\link{student2003}}, \code{\link{item2003}}}
 \examples{
 library(PISA2003lite)
 
 # first few rows
 school2003[1:5,1:5]
-head(school2003dict$colnames)
+head(school2003dict)
 
 # merge of school and student data
 means <- unclass(by(
