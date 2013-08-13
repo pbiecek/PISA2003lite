@@ -39,4 +39,14 @@ student2003 <- read.spss("stud.sav", to.data.frame=TRUE)
 prepare(student2003, "student2003")
 
 scoredItem2003 <- read.spss("scoreMS03.sav", to.data.frame=TRUE)
+tmp <- attributes(scoredItem2003)$variable.labels
+tmp <- tmp[1:174]
+
+scoredItem2003 <- scoredItem2003[,-grep(colnames(scoredItem2003), pattern="[0-9]Q[0-9]")]
+kt <- grep(colnames(scoredItem2003), pattern="[0-9]R[0-9]")
+ktn <- colnames(scoredItem2003)
+ktn[kt] <- paste(substr(ktn[kt], 1, 4), "Q", substr(ktn[kt], 6, 20), sep="")
+colnames(scoredItem2003) <- ktn
+attributes(scoredItem2003)$variable.labels <- tmp
+
 prepare(scoredItem2003, "scoredItem2003")
