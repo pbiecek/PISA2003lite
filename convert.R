@@ -38,3 +38,5 @@ prepare(item2003, "item2003")
 student2003 <- read.spss("stud.sav", to.data.frame=TRUE)
 prepare(student2003, "student2003")
 
+scoredItem2003 <- read.spss("scoreMS03.sav", to.data.frame=TRUE)
+prepare(scoredItem2003, "scoredItem2003")
